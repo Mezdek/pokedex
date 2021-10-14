@@ -1,9 +1,10 @@
-import './App.css';
-import pokemons from './data/pokedex';
 import React from 'react';
-import {PadZeros, BigLetterFirst, BigLetterAll,} from './methods.js';
-import Nav from './Nav';
-import WelcomeSection from './WelcomeSection';
+import './App.css';
+
+import pokemons from './data/pokedex';
+import {PadZeros, BigLetterFirst, BigLetterAll,} from './components/methods';
+import Nav from './components/Nav';
+import WelcomeSection from './components/WelcomeSection';
 
 function Types (props){
   return (
