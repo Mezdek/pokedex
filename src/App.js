@@ -2,11 +2,12 @@ import './App.css';
 import pokemons from './data/pokedex';
 import React from 'react';
 import {PadZeros, BigLetterFirst, BigLetterAll,} from './methods.js';
-
+import Nav from './Nav';
+import WelcomeSection from './WelcomeSection';
 
 function Types (props){
   return (
-    <div className='singleType'>
+    <div className={`singleType ${props.typeName}`}>
       {`${BigLetterAll(props.typeName)}`}
     </div>
   )
@@ -34,14 +35,18 @@ function Card (props){
 function App() {
   return (
     <div className="App">
+      <Nav />
       <div className='wrapper'>
-      {
-        pokemons.map(
-          (pokemon,index) => {
-          return <Card name={pokemon.name} image={pokemon.image} types={pokemon.types} index={index+1}/>
-        }
-        )
-      }
+        <WelcomeSection />
+        <div className='CardsDeck'>
+          {
+            pokemons.map(
+              (pokemon,index) => {
+              return <Card name={pokemon.name} image={pokemon.image} types={pokemon.types} index={index+1}/>
+            }
+            )
+          }
+        </div>
       </div>
     </div>
   );

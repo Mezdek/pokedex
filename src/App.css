@@ -2,15 +2,21 @@
   box-sizing: border-box;
 }
 .App{
-  background-color: indianred;
+  background: linear-gradient(10deg, #c1dbff 50%, #e3f0ff 50%);
 }
 
 .wrapper {
   margin: auto;
   padding: 5px;
   background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
+  align-items: center;
+}
+.CardsDeck{
   display: grid;
-  width: 90%;
+  width: 100%;
   grid: auto/ 1fr 1fr 1fr 1fr;
   gap: 5px;
   justify-items: center;
@@ -39,8 +45,25 @@
   width: 50%;
   padding: 5px;
   text-align: center;
-  background-color:#9edc60;
   border-radius: 5px;
+}
+.grass{
+  background-color:#9edc60;
+}
+.fire{
+  background-color:#e95a0d;
+}
+.poison{
+  background-color:#bb95e3;
+}
+.bug{
+  background-color:#729f3f;
+}
+.water{
+  background-color: #4592c4;
+}
+.flying{
+  background: linear-gradient(180deg, #3dc7ef 50%,#bdb9b8 50%);
 }
 .cardType{
   display: flex;
@@ -48,4 +71,5 @@
   height:fit-content;
   flex-flow: row nowrap;
   justify-content: space-between;
+  background-color: white;
 }
