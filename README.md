@@ -1,5 +1,6 @@
 # Pokedex
 #### This project was one of many exercises in Wild Code School to learn how to work with React.js.
+[Check the deployed version](https://pokedex-m32.vercel.app/)
 
 * [What it does](#what-it-does)
 * [How to start](#how-to-start)
