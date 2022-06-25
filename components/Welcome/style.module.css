@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+}
+.text {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px;
+}

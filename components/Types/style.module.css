@@ -1,0 +1,27 @@
+.singleType {
+  display: flex;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  text-transform: uppercase;
+}
+
+.grass {
+  background-color: #9edc60;
+}
+.fire {
+  background-color: #e95a0d;
+}
+.poison {
+  background-color: #bb95e3;
+}
+.bug {
+  background-color: #729f3f;
+}
+.water {
+  background-color: #4592c4;
+}
+.flying {
+  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
