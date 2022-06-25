@@ -1,0 +1,32 @@
+/* .card_name {
+  text-indent: 1rem;
+} */
+
+.main {
+  background-color: #f1f1f1;
+  display: flex;
+  margin: 5px;
+  flex-flow: column nowrap;
+  width: 150px;
+  height: fit-content;
+  border-radius: 0 0 25px 25px;
+  overflow: hidden;
+}
+.card_name {
+  text-align: left;
+  padding: 3px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.card_image {
+  display: block;
+}
+
+.card_type {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: white;
+}
